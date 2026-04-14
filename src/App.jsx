@@ -29,7 +29,7 @@ function GetLocation() {
         setLocation(data);
 
         try {
-          await axios.post("http://localhost:5000/locations", data);
+          await axios.post("https://server-geogame-3.onrender.com/locations", data);
           setSent(true);
         } catch (err) {
           console.error(err);
